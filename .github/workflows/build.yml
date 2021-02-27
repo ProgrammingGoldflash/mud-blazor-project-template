@@ -44,4 +44,4 @@ jobs:
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"ProgrammingGoldflash_mud-blazor-project-template" /o:"programminggoldflash" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
           MSBuild .\MudBlazorTemplate\MudBlazorTemplate.sln /t:rebuild
-	  .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
+          .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
